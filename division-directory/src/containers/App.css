@@ -1,0 +1,18 @@
+body {
+	background: linear-gradient(to right, RGB(44, 44, 44), RGB(84, 84, 84));
+	color: #ffffff;
+}
+
+@font-face {
+	font-family: "Modern Warfare Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Modern Warfare Regular"),
+		url("ModernWarfare-8MM6z.woff") format("woff");
+}
+
+h1 {
+	font-family: "Modern Warfare Regular";
+	font-weight: 200;
+	color: #ffffff;
+}
