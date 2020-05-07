@@ -1,16 +1,16 @@
 import React from "react";
 import Cards from "../components/Cards";
 
-const CardList = ({ robots }) => {
+const CardList = ({ avatars }) => {
 	return (
 		<div>
-			{robots.map((user, i) => {
+			{avatars.map((user, i) => {
 				return (
 					<Cards
 						key={i}
-						id={robots[i].id}
-						name={robots[i].name}
-						email={robots[i].email}
+						id={avatars[i].id}
+						name={avatars[i].name}
+						email={avatars[i].email}
 					/>
 				);
 			})}

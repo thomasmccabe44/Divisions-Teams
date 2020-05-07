@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import CardList from "../components/CardList";
+import NameBar from "../components/NameBar";
 import SearchBar from "../components/SearchBar";
+import CreateMember from "../components/CreateMember";
 import "tachyons";
 import "../containers/App.css";
 import Scroll from "../components/Scroll";
@@ -10,35 +12,45 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			robots: [],
+			avatars: [],
 			searchfield: "",
+			namefield: "",
 		};
 	}
+
+	// Mounting
 
 	componentDidMount() {
 		fetch("https://jsonplaceholder.typicode.com/users")
 			.then((response) => response.json())
-			.then((users) => this.setState({ robots: users }));
+			.then((users) => this.setState({ avatars: users }));
 	}
+
+	// OnChange
 
 	onSearchChange = (event) => {
 		this.setState({ searchfield: event.target.value });
 	};
 
 	render() {
-		const { robots, searchfield } = this.state;
-		const filteredRobots = robots.filter((robot) => {
-			return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+		const { avatars, searchfield } = this.state;
+		const filteredAvatars = avatars.filter((avatar) => {
+			return avatar.name
+				.toLowerCase()
+				.includes(searchfield.toLowerCase());
 		});
-		return !robots.length ? (
+		return !avatars.length ? (
 			<h1 className="tc">Loading</h1>
 		) : (
 			<div className="tc">
-				<h1 className="f1">RoboFriends</h1>
-				<SearchBar searchChange={this.onSearchChange} />
+				<NameBar />
+				<div className="fl w-100">
+					<SearchBar searchChange={this.onSearchChange} />
+					<CreateMember />
+				</div>
 				<Scroll>
 					<ErrorBoundry>
-						<CardList robots={filteredRobots} />
+						<CardList avatars={filteredAvatars} />
 					</ErrorBoundry>
 				</Scroll>
 			</div>

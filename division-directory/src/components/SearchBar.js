@@ -3,9 +3,9 @@ import "tachyons";
 
 const SearchBar = ({ searchfield, searchChange }) => {
 	return (
-		<div className="pa2">
+		<div>
 			<input
-				className="pa3 ba br3 b--dark-green bw2 bg-light-blue tc"
+				className="fl w-25 pa3 ba br3 b--silver bw2 bg-white tc"
 				type="search"
 				placeholder="Search Directory"
 				value={searchfield}

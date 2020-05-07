@@ -16,3 +16,12 @@ h1 {
 	font-weight: 200;
 	color: #ffffff;
 }
+
+.avatarImg {
+	height: 200px;
+	width: 200px;
+}
+
+button {
+	color: grey;
+}
