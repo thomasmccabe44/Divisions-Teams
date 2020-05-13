@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Divisions-Teams/static/css/main.67725c65.chunk.css",
+    "main.js": "/Divisions-Teams/static/js/main.d074624b.chunk.js",
+    "main.js.map": "/Divisions-Teams/static/js/main.d074624b.chunk.js.map",
+    "runtime-main.js": "/Divisions-Teams/static/js/runtime-main.4c750254.js",
+    "runtime-main.js.map": "/Divisions-Teams/static/js/runtime-main.4c750254.js.map",
+    "static/css/2.69121389.chunk.css": "/Divisions-Teams/static/css/2.69121389.chunk.css",
+    "static/js/2.14d73260.chunk.js": "/Divisions-Teams/static/js/2.14d73260.chunk.js",
+    "static/js/2.14d73260.chunk.js.map": "/Divisions-Teams/static/js/2.14d73260.chunk.js.map",
+    "index.html": "/Divisions-Teams/index.html",
+    "precache-manifest.87891bac58f74eebc4b66ec24d862610.js": "/Divisions-Teams/precache-manifest.87891bac58f74eebc4b66ec24d862610.js",
+    "service-worker.js": "/Divisions-Teams/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/Divisions-Teams/static/css/2.69121389.chunk.css.map",
+    "static/css/main.67725c65.chunk.css.map": "/Divisions-Teams/static/css/main.67725c65.chunk.css.map",
+    "static/js/2.14d73260.chunk.js.LICENSE.txt": "/Divisions-Teams/static/js/2.14d73260.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Divisions-Teams/static/media/ModernWarfare-8MM6z.1b052727.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c750254.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.14d73260.chunk.js",
+    "static/css/main.67725c65.chunk.css",
+    "static/js/main.d074624b.chunk.js"
+  ]
+}
