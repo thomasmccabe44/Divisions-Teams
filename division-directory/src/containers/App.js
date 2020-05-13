@@ -46,13 +46,11 @@ class App extends Component {
 				<NameBar />
 				<div className="">
 					<Container>
-						<Row className="justify-content-md-center">
+						<Row className="justify-content-md-center m-3">
 							<Col xs={6} md={4}>
 								<SearchBar searchChange={this.onSearchChange} />
 							</Col>
-							<Col xs={6} md={4}>
-								<CreateMember />
-							</Col>
+							<CreateMember />
 						</Row>
 					</Container>
 				</div>

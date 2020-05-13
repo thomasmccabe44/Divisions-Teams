@@ -42,3 +42,15 @@ button {
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px black;
 }
+
+.btn-secondary {
+	color: #fff;
+	background-color: #6c757d;
+	border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+	color: #fff;
+	background-color: green;
+	border-color: #545b62;
+}

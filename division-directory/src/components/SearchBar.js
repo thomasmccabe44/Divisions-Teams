@@ -4,7 +4,7 @@ const SearchBar = ({ searchfield, searchChange }) => {
 	return (
 		<div>
 			<input
-				className=""
+				className="form-control text-center"
 				type="search"
 				placeholder="Search Directory"
 				value={searchfield}

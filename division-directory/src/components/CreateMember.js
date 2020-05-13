@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Modal, Button, Form, Col } from "react-bootstrap";
+import "../containers/App.css";
 
 class CreateMember extends Component {
 	render() {
@@ -75,7 +76,7 @@ class CreateMember extends Component {
 			return (
 				<>
 					<Button
-						variant="primary"
+						variant="secondary"
 						onClick={() => setModalShow(true)}
 					>
 						Create Member
