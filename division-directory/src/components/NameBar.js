@@ -1,5 +1,4 @@
 import React from "react";
-import "tachyons";
 
 class NameBar extends React.Component {
 	constructor(props) {
@@ -30,15 +29,12 @@ class NameBar extends React.Component {
 					<form onSubmit={this.handleSubmit}>
 						<input
 							type="text"
-							className="pa3 ba br3 b--silver bw2 bg-white tc"
+							className=""
 							placeholder="Team Name"
 							value={this.state.input}
 							onChange={this.handleChange}
 						/>
-						<button
-							className="pa3 ba br3 b--silver bw2 bg-white f-gray tc hover-bg-green hover-white pointer"
-							type="submit"
-						>
+						<button className="  " type="submit">
 							Create Name
 						</button>
 					</form>
@@ -47,8 +43,8 @@ class NameBar extends React.Component {
 			);
 		} else {
 			return (
-				<div className="pa2">
-					<h1 className="pa3">{this.state.submit}</h1>
+				<div className="">
+					<h1 className="">{this.state.submit}</h1>
 				</div>
 			);
 		}

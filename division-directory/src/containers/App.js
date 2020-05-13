@@ -3,10 +3,10 @@ import CardList from "../components/CardList";
 import NameBar from "../components/NameBar";
 import SearchBar from "../components/SearchBar";
 import CreateMember from "../components/CreateMember";
-import "tachyons";
 import "../containers/App.css";
 import Scroll from "../components/Scroll";
 import ErrorBoundry from "../components/ErrorBoundry";
+import { Container, Col, Row } from "react-bootstrap";
 
 class App extends Component {
 	constructor() {
@@ -40,13 +40,21 @@ class App extends Component {
 				.includes(searchfield.toLowerCase());
 		});
 		return !avatars.length ? (
-			<h1 className="tc">Loading</h1>
+			<h1 className="text-center">Loading</h1>
 		) : (
-			<div className="tc">
+			<div className="text-center">
 				<NameBar />
-				<div className="fl w-100">
-					<SearchBar searchChange={this.onSearchChange} />
-					<CreateMember />
+				<div className="">
+					<Container>
+						<Row className="justify-content-md-center">
+							<Col xs={6} md={4}>
+								<SearchBar searchChange={this.onSearchChange} />
+							</Col>
+							<Col xs={6} md={4}>
+								<CreateMember />
+							</Col>
+						</Row>
+					</Container>
 				</div>
 				<Scroll>
 					<ErrorBoundry>
